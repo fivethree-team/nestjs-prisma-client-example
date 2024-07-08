@@ -1,6 +1,6 @@
 import type { Config } from './config.interface';
 
-const config: Config = {
+export default (): Config => ({
   nest: {
     port: 3000,
   },
@@ -25,6 +25,4 @@ const config: Config = {
     refreshIn: '7d',
     bcryptSaltOrRound: 10,
   },
-};
-
-export default (): Config => config;
+});
